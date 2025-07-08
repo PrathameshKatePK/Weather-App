@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header ul च्या अगोदर टाक -->
+
+
+    <header>
+        <div class="container">
+            <div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" id="themeSwitch">
+    <span class="slider round"></span>
+  </label>
+</div>
+       <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#login">Login/Signup</a></li>
+
+       </ul>
+       </div>
+    </header>
+<div class="page">
+  <div class="container">
+    <div class="get-field">
+      <form action="javascript:void(0);">
+        <!-- City Input -->
+        <input type="text" name="city" id="_city" placeholder="Enter City">
+
+        <!-- Location Button (optional) -->
+        <input type="button" name="location" id="_location" value="📍" title="Use current location" />
+
+        <!-- Search Button -->
+        <button id="searchBtn">Search</button>
+      </form>
+
+      <!-- Weather Result Card -->
+      <div id="weatherResult" class="weather-card" style="display: none;">
+        <h2 id="cityName">City Name</h2>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+        <p><strong>Temperature:</strong> <span id="temp">--</span>°C</p>
+        <p><strong>Condition:</strong> <span id="condition">--</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+        <p><strong>Wind Speed:</strong> <span id="wind">--</span> m/s</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+     
+    <script src="script.js"></script>
+    <div class="container">
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Map</li>
+    <li>Login/signup</li>
+  </ul> 
+</div>
+  <div class="copyright">
+    © 2025 All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
